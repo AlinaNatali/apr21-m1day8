@@ -21,7 +21,13 @@
         }
         button {
             font-size: 15px;
-            color: rgb(114, 0, 0)
+            color: rgb(114, 0, 0);
+            margin: 5px;
+            border-radius: 5px;
+        }
+        body{
+            font-family: Cursive;
+            color: blue;
         }
      
     </style>
@@ -44,13 +50,11 @@
     <!-- EXERCISE 4
         Create a button "Remove First Task" to trigger the method "removeFirst"
         -->
-    <button id = "removeFirst">Remove First Task</button> 
+    <button id = "removeFirst" onclick="removeFirst()">Remove First Task</button> 
     <br>
 
 
-    <ul id="myTaskList">
-      
-    </ul>
+    <ul id="myTaskList"></ul>
 
     <hr>
 
@@ -102,6 +106,10 @@
       /* EXERCISE 7: 
                 Create a method "removeFirst" which removes the first item from the task list
             */
+            const removeFirst = function() {
+           const ul = document.getElementById('myTaskList')
+           ul.firstChild.remove()
+            }
 
       /* EXERCISE 8: 
                Create a method "getTasksAsArray" which returns, and prints to the console an array containing the tasks as string
