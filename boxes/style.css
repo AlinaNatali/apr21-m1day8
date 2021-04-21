@@ -1,0 +1,33 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+body{
+    font-size: 50px;
+}
+.box{
+    margin: 20px;
+    border: solid 1px rgb(83, 83, 83);
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    border: solid 3px rgb(255, 23, 23);
+}
+
+.color1{
+    background-color: rgb(136, 136, 253);
+}
+.color2{
+    background-color: rgb(255, 173, 173);
+}
+.color3{
+    background-color: rgb(143, 255, 143);
+}
+.color4{
+    background-color: rgb(255, 255, 148);
+}
